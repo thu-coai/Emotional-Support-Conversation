@@ -1,0 +1,1 @@
+{"unk_token": "__unk__", "bos_token": "__start__", "eos_token": "__end__", "pad_token": "__null__", "special_tokens_map_file": null, "tokenizer_file": null, "name_or_path": "facebook/blenderbot_small-90M"}

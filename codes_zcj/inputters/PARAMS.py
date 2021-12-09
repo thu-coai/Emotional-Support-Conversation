@@ -1,0 +1,2 @@
+
+GOLDEN_TRUTH = True

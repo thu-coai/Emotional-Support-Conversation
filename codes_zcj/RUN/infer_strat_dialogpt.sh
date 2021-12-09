@@ -1,0 +1,19 @@
+CUDA_VISIBLE_DEVICES=3 python infer.py \
+    --config_name strat_dialogpt \
+    --inputter_name strat \
+    --add_nlg_eval \
+    --seed 0 \
+    --load_checkpoint /home/zhengchujie/EmotionalSupportConversation/DATA/vanilla.vanilla_dialogpt/2021-08-05120240.5e-05.16.1gpu/epoch-1.bin \
+    --fp16 false \
+    --max_input_length 180 \
+    --max_decoder_input_length 45 \
+    --max_length 45 \
+    --min_length 10 \
+    --infer_batch_size 16 \
+    --infer_input_file ./_reformat/test.txt \
+    --temperature 0.7 \
+    --top_k 0 \
+    --top_p 0.9 \
+    --num_beams 1 \
+    --repetition_penalty 1 \
+    --no_repeat_ngram_size 3

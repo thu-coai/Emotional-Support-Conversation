@@ -1,0 +1,17 @@
+{
+  "model_name": "strat_dialogpt",
+  "pretrained_model_path": "./DialoGPT-small",
+  "custom_config_path": null,
+  "gradient_checkpointing": false,
+
+  "expanded_vocab": [
+    "[Question]",
+    "[Restatement or Paraphrasing]",
+    "[Reflection of feelings]",
+    "[Self-disclosure]",
+    "[Affirmation and Reassurance]",
+    "[Providing Suggestions]",
+    "[Information]",
+    "[Others]"
+  ]
+}

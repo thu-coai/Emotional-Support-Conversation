@@ -1,0 +1,6 @@
+{
+  "model_name": "vanilla_dialogpt",
+  "pretrained_model_path": "./DialoGPT-small",
+  "custom_config_path": null,
+  "gradient_checkpointing": false
+}
