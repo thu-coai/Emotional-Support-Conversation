@@ -5,7 +5,6 @@ Codes for the ACL 2021 paper: [**Towards Emotional Support Dialog Systems**](htt
 
 If you request for the ESConv dataset, please contact us through E-mail: 
 
-- Chujie Zheng (郑楚杰): zcj16 AT tsinghua DOT org DOT cn
 - Minlie Huang (黄民烈): aihuang AT tsinghua DOT edu DOT cn
 
 If you use our codes or your research is related to our paper, please kindly cite our paper:
