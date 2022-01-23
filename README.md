@@ -1,11 +1,7 @@
 # Emotional-Support-Conversation
 ### *Copyright © 2021 CoAI Group, Tsinghua University. All rights reserved. Data and codes are for academic research use only.*
 
-Codes for the ACL 2021 paper: [**Towards Emotional Support Dialog Systems**](https://arxiv.org/abs/2106.01144)
-
-If you request for the ESConv dataset, please contact us through E-mail: 
-
-- Minlie Huang (黄民烈): aihuang AT tsinghua DOT edu DOT cn
+Data and codes for the ACL 2021 paper: [**Towards Emotional Support Dialog Systems**](https://arxiv.org/abs/2106.01144)
 
 If you use our codes or your research is related to our paper, please kindly cite our paper:
 
