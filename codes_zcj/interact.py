@@ -168,7 +168,7 @@ while True:
     inputs = inputter.convert_data_to_inputs(history, toker, **dataloader_kwargs)
     inputs = inputs[-1:]
     features = inputter.convert_inputs_to_features(inputs, toker, **dataloader_kwargs)
-    batch = inputter.prepare_infer_batch(features, toker)
+    batch = inputter.prepare_infer_batch(features, toker, interact=True)
     batch = {k: v.to(device) if isinstance(v, Tensor) else v for k, v in batch.items()}
     batch.update(generation_kwargs)
     encoded_info, generations = model.generate(**batch)
