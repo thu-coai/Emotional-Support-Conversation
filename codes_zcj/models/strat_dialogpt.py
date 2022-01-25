@@ -103,7 +103,7 @@ class Model(BaseModel, GPT2LMHeadModel):
     def predict_strategy(self, logits, encoded_info):
         assert not self.training
         strat_id = encoded_info.get('strat_id', None)
-        logits = logits[:, 0, -8:]
+        logits = logits[:, -1, -8:]
     
         if strat_id is not None:
             pred = strat_id
