@@ -697,6 +697,12 @@ def evaluate(args, model: PreTrainedModel, tokenizer: PreTrainedTokenizer, eval_
         decoder_label_ids = decoder_labels.to(args.device)
         decoder_role_ids = decoder_role_ids.to(args.device)
         decoder_cls_labels = decoder_cls_labels.to(args.device)
+        if not args.role:
+            role_ids = None
+            decoder_role_ids = None
+        if not args.turn:
+            turn_ids = None
+            decoder_role_ids = None
 
         with torch.no_grad():
             if not args.role:
