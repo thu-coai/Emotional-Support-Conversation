@@ -562,8 +562,10 @@ def train(args, train_dataset, model: PreTrainedModel, tokenizer: PreTrainedToke
             # we did't use role label and turn number in modeling as they did't carry significant improvement. Codes still remain.
             if not args.role:
                 role_ids = None
+                decoder_role_ids = None
             if not args.turn:
                 turn_ids = None
+                decoder_role_ids = None
             if not args.strategy:
                 outputs = model(input_ids, attention_mask = input_ids.ne(tokenizer.pad_token_id), decoder_input_ids=decoder_input_ids, decoder_turn_ids=decoder_turn_ids, decoder_role_ids=decoder_role_ids, turn_ids=turn_ids, role_ids=role_ids,labels = decoder_label_ids)
                 ppl = loss = outputs[0]  # model outputs are always tuple in transformers (see doc)                
