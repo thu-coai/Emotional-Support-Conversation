@@ -29,7 +29,7 @@ conda activate cuda
 
 You should first download the [BlenderBot-small](https://huggingface.co/facebook/blenderbot_small-90M) model and replace the fake `pytorch_model.bin` file in `Blenderbot_small-90M` with the true one.
 
-If you would like to evaluate generated results with Embedding-based similarity, you can download my prepared embedding files from [here](https://1drv.ms/u/s!Aky8v8NZbQx1qj7OlJKcQEJ6qrWm?e=E8N169).
+If you would like to evaluate generated results with Embedding-based similarity, you can download my prepared embedding files from [here](https://1drv.ms/f/s!Aky8v8NZbQx1qj7OlJKcQEJ6qrWm).
 
 ## About Postfix
 
