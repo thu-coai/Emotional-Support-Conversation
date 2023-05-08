@@ -16,7 +16,7 @@ If you use our codes or your research is related to our paper, please kindly cit
     Yu, Zhou  and 
     Jiang, Yong  and 
     Huang, Minlie},
-  booktitle={Proceedings of the 59th annual meeting of the Association for Computational Linguistics},
+  booktitle={ACL},
   year={2021}
 }
 ```
