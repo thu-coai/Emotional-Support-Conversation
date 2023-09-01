@@ -23,7 +23,7 @@ If you use our codes or your research is related to our paper, please kindly cit
 
 ## Data
 
-The corpus file is `ESConv.json`. We have collected **more** conversations with more problem topics. ESConv now contians 1,300 conversations with 10 topic problems.
+The corpus file is `ESConv.json`. We have collected **more** conversations with more problem topics. ESConv now contains 1,300 conversations with 10 topic problems.
 
 ### Statistics
 #### Problem Category
