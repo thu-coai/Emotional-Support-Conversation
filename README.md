@@ -4,7 +4,7 @@
 ## 2024-05-14
 ### Added
 - To support future research, we release `FailedESConv.json`, 276 negative samples of emotional support conversations that were primarily dropped when we were collecting ESConv.
-    - Our rule to determine an effectively negtive sample: (# of turn > 2 AND # of speaker > 1)  AND ((post-conversation survey was done AND (negtive emotion intensity does not decrease OR empathy score <=2 OR relevance score <=2 )) OR (the support-seeker did not finish the post-conversation survey AND the support-seeker's last feedback score <= 2) )
+    - Our rule to determine an effectively negative sample: (# of turn > 2 AND # of speaker > 1)  AND ((post-conversation survey was done AND (negative emotion intensity does not decrease OR empathy score <=2 OR relevance score <=2 )) OR (the support-seeker did not finish the post-conversation survey AND the support-seeker's last feedback score <= 2) )
 
 
 Data and codes for the ACL 2021 paper: [**Towards Emotional Support Dialog Systems**](https://arxiv.org/abs/2106.01144)
