@@ -21,13 +21,23 @@ Siyang Liu*, **Chujie Zheng***, Orianna Demasi, Sahand Sabour, Yu Li, Zhou Yu, Y
 ## Preparing Enviroment
 
 ```bash
-conda env create -f env.yml -n cuda
-conda activate cuda
+conda env create -f env.yml -n esc-2021
+conda activate esc-2021
 ```
 
 ## Downloading Model
 
 You should first download the [BlenderBot-small](https://huggingface.co/facebook/blenderbot_small-90M) model and replace the fake `pytorch_model.bin` file in `Blenderbot_small-90M` with the true one.
+
+```bash
+wget -O Blenderbot_small-90M/pytorch_model.bin https://huggingface.co/facebook/blenderbot_small-90M/resolve/main/pytorch_model.bin
+```
+
+After downloading the model, run the following command to prevent Git from tracking local changes to the model files:
+
+```bash
+git update-index --skip-worktree Blenderbot_small-90M/pytorch_model.bin
+```
 
 If you would like to evaluate generated results with Embedding-based similarity, you can download my prepared embedding files from [HuggingFace](https://huggingface.co/datasets/chujiezheng/glove_embedding).
 
@@ -52,7 +62,9 @@ Every time of model training will create a new folder in `DATA/{inputter_name}.{
 
 Then, run `bash RUN/infer_vanilla.sh` to do the inference.
 
-**Note**: When you run `infer_strat.sh`, you can change `GOLDEN_TRUTH` in  `inputters/PARAMS.py` to control whether use the golden strategy during inference.
+**Note**:
+- When you run `infer_strat.sh`, you can change `GOLDEN_TRUTH` in `inputters/PARAMS.py` to control whether to use the golden strategy during inference.
+- You can change `SAMPLE` in `models/PARAMS.py` to control the strategy selection method (set to `False` to select the strategy with maximum probability, or `True` for sampling).
 
 ## Interacting with Your Model
 
