@@ -1,9 +1,8 @@
 CUDA_VISIBLE_DEVICES=0 python infer.py \
     --config_name vanilla \
     --inputter_name vanilla \
-    --add_nlg_eval \
     --seed 0 \
-    --load_checkpoint /home/zhengchujie/EmotionalSupportConversation/DATA/vanilla.vanilla/2021-08-05120221.3e-05.16.1gpu/epoch-1.bin \
+    --load_checkpoint DATA/vanilla.vanilla/2021-08-05120221.3e-05.16.1gpu/epoch-1.bin \
     --fp16 false \
     --max_input_length 160 \
     --max_decoder_input_length 40 \

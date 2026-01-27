@@ -1,9 +1,8 @@
 CUDA_VISIBLE_DEVICES=3 python infer.py \
     --config_name vanilla_dialogpt \
     --inputter_name vanilla \
-    --add_nlg_eval \
     --seed 0 \
-    --load_checkpoint /home/zhengchujie/EmotionalSupportConversation/DATA/vanilla.vanilla_dialogpt/2021-08-05120240.5e-05.16.1gpu/epoch-1.bin \
+    --load_checkpoint DATA/vanilla.vanilla_dialogpt/2021-08-05120240.5e-05.16.1gpu/epoch-1.bin \
     --fp16 false \
     --max_input_length 180 \
     --max_decoder_input_length 45 \

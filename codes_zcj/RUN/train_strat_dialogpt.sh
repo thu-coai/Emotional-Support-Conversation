@@ -1,4 +1,4 @@
-CUDA_VISIBLE_DEVICES=5 python train.py \
+CUDA_VISIBLE_DEVICES=0 python train.py \
     --config_name strat_dialogpt \
     --inputter_name strat \
     --eval_input_file ./_reformat/valid.txt \
@@ -9,7 +9,7 @@ CUDA_VISIBLE_DEVICES=5 python train.py \
     --gradient_accumulation_steps 1 \
     --eval_batch_size 16 \
     --learning_rate 5e-5 \
-    --num_epochs 2 \
+    --num_epochs 5 \
     --warmup_steps 100 \
     --fp16 false \
     --loss_scale 0.0 \

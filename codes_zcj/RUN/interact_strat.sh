@@ -2,7 +2,7 @@ CUDA_VISIBLE_DEVICES=7 python interact.py \
     --config_name strat \
     --inputter_name strat \
     --seed 3 \
-    --load_checkpoint /home/zhengchujie/EmotionalSupportConversation/DATA/strat.strat/2021-07-31145609.3e-05.16.1gpu/epoch-2.pt \
+    --load_checkpoint DATA/strat.strat/2021-07-31145609.3e-05.16.1gpu/epoch-2.pt \
     --fp16 false \
     --max_src_len 150 \
     --max_tgt_len 50 \

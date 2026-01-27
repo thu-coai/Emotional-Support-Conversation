@@ -1,0 +1,8 @@
+{
+    "max_input_length": 180,
+    "max_decoder_input_length": 45,
+    "max_knowledge_length": null,
+    "label_num": null,
+    "only_encode": false,
+    "n_examples": 12271
+}
