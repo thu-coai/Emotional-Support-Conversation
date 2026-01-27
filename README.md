@@ -1,6 +1,12 @@
 # Emotional-Support-Conversation
 ### *Copyright © 2021 CoAI Group, Tsinghua University. All rights reserved. Data and codes are for academic research use only.*
 
+## 2026-01-28
+### Added
+- We conducted a replication experiment with `codes_zcj`.
+    - Update `env.yml`, `README.md`, `.gitignore`.
+    - Outputs are in `DATA`.
+
 ## 2024-05-14
 ### Added
 - To support future research, we release `FailedESConv.json`, 196 negative samples of emotional support conversations that were primarily dropped when we were collecting ESConv.
